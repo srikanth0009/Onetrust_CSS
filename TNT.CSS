@@ -1,3 +1,21 @@
+.ot-preference-actions-undo{
+display : none !important;
+}
+
+.cdk-global-overlay-wrapper {
+  justify-content: center !important;
+  align-items: flex-end !important;
+}
+
+.cdk-overlay-pane {
+  margin-bottom: 1.25rem !important;
+  margin-right: 0 !important;
+}
+
+
+.cdk-overlay-container {
+    margin-top: -100px !important;
+  }
 @media only screen and (max-width: 767px) {
   .cdk-overlay-container {
     margin-top: -100px !important;
@@ -26,8 +44,8 @@ font-size: 15px;
 
 
 .vt-button--primary{
-background: #16AB4B !important;
-  border: .1rem solid #16AB4B !important;
+background: #1618AB !important;
+  border: .1rem solid #1618AB !important;
 }
 
 .ot-preference-actions{
@@ -77,13 +95,13 @@ height: 18px !important;
 transform: translateX(20px) !important;
 }
 input:checked + .ot-toggle-slider::before{
-   background-color: #e6c74f !important;
+   background-color: #0d1c97 !important;
 }
 input:checked + .ot-toggle-slider{
-  background-color: #e3f9c1 !important;
+  background-color: #c8cbd5 !important;
 }
 input:focus + .ot-toggle-slider{
-  border: 1px solid #a3a23b !important;
+  border: 1px solid #eee !important;
 }
 
 .ot-preference-title, .ot-preference-header {
@@ -110,7 +128,7 @@ display : none !important;
 }
 
 #e334af2e-7ffc-4ab3-bbdf-cd200399e141{
-margin-top : -250px;
+margin-top : -270px;
 }
 
 .ot-preference-section-container:nth-of-type(4) .ot-preference-text-block h2{
@@ -144,7 +162,7 @@ position: absolute;
 
 /* STEP 3: Style the image */
 .ot-preference-section-container:nth-of-type(4) multipage-section-item:last-of-type img {
-  max-width: 100% !important;
+  
   height: 360px !important;
 }
 
@@ -161,8 +179,9 @@ border: 2px solid #c4c44c;
 
 .ot-preference-section-container:nth-of-type(3) {
   position: relative;
-  top: -220px; 
+  top: -240px; 
   margin-top: -30px;
+  z-index: 999;
 }
 
 
@@ -170,10 +189,14 @@ border: 2px solid #c4c44c;
 font-size: 34px !important;
   font-weight: bold;
 }
+.privacy-consent-text p{
+  padding-top : 10px;
+  padding-bottom : 10px;
+}
 
 .custom-consent-privacy-banner{
 display: flex;
-  align-items: center;
+  align-items: flex-start;
 gap: 40px;
   margin: 10px;
 }
