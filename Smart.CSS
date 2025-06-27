@@ -1,3 +1,22 @@
+.ot-preference-actions-undo{
+display : none !important;
+}
+
+.cdk-global-overlay-wrapper {
+  justify-content: center !important;
+  align-items: flex-end !important;
+}
+
+.cdk-overlay-pane {
+  margin-bottom: 1.25rem !important;
+  margin-right: 0 !important;
+}
+
+
+.cdk-overlay-container {
+    margin-top: -100px !important;
+  }
+
 .wrapper-header__header{
 display : none !important;
 }
@@ -193,6 +212,9 @@ display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
 }
+#tabpanel_f927cce3-a47e-401b-9f99-8c4278561a55{
+  max-width: 110.2rem !important;
+}
 
 
 
@@ -268,14 +290,14 @@ background-color: #cec4c4 !important;
 
 .first-consent-step {
 color: #16AB4B;
-  font-weight: bold;
+  font-weight: 700;
 font-family : roboto;
   font-size: 60px;
 }
 
 .first-consent-title {
   font-size: 30px !important;
-font-weight: bold;
+font-weight: 700;
 font-family: Roboto;
   margin: 0;
 }
@@ -478,7 +500,15 @@ display:none !important;
 }
 .ot-preference-section-container:first-of-type .ot-setting__title {
   display: block !important;
-padding-top: 20px;
+}
+/* 1. Apply padding to all titles by default */
+.ot-preference-section-items .ot-setting__title {
+  padding-top: 20px;
+}
+
+/* 2. Remove padding from titles inside the SECOND section-item */
+.ot-preference-section-items multipage-section-item:nth-of-type(2) .ot-setting__title {
+  padding-top: 0 !important;
 }
 .ot-setting__text{
 padding-right: 0px;
@@ -531,6 +561,7 @@ display:block;
   text-align: center;
   font-size: 14px;
   color: #333;
+  white-space: nowrap;
   position: relative;
   padding-top: 150px;
   box-sizing: border-box;
